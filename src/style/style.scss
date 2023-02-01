@@ -1,0 +1,42 @@
+@import 'utils/a11y';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'utils/transitions';
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: rem(16px);
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgb(255 255 255 / 87%);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+          'FILL' 1,
+          'wght' 500,
+          'GRAD' 0,
+          'opsz' 48;
+  position: relative;
+  top: 3px;
+}
+
+button {
+  @apply bg-rose-900 p-4 rounded-lg mx-2 font-bold text-white;
+  &.cancel {
+    @apply bg-red-900;
+  }
+  &:hover {
+    @apply bg-rose-800;
+  }
+}
